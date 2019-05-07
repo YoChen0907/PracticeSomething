@@ -1,0 +1,16 @@
+.function-title {
+  margin-right: 20px;
+  color: aquamarine;
+  background-color: black;
+  padding: 5px; }
+
+.function-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+
+.function-explain {
+  margin-left: 20px;
+  color: bisque;
+  background-color: cadetblue;
+  padding: 0px 5px; }

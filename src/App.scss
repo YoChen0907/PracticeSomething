@@ -1,0 +1,14 @@
+.App {
+    margin: 0px 10px;
+    .useing-block {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+        border: 1px solid black;
+        padding: 10px 0;
+    }
+    .useing-table {
+        cursor: pointer;
+    }
+}
+  
