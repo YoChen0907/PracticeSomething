@@ -1,0 +1,7 @@
+.scss-block .scss-using-block {
+  display: flex;
+  border: 1px solid black; }
+  .scss-block .scss-using-block .helf-block {
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box; }
