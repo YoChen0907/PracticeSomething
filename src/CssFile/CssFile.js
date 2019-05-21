@@ -10,6 +10,10 @@ import Margin from './Margin';
 import Padding from './Padding';
 import Cursor from './Cursor';
 import TextAlign from './TextAlign';
+import LineHeight from './LineHeight';
+import WordSpacing from './WordSpacing';
+import FontStyle from './FontStyle';
+import FontSize from './FontSize';
 
 import './CssFile.css';
 
@@ -59,18 +63,19 @@ function CssFile() {
             </div>
             <div className="css-file-block">
                 line-height
+                <LineHeight />
             </div>
             <div className="css-file-block">
                 word-spacing
-            </div>
-            <div className="css-file-block">
-                font-family
+                <WordSpacing />
             </div>
             <div className="css-file-block">
                 font-style
+                <FontStyle />
             </div>
             <div className="css-file-block">
                 font-size
+                <FontSize />
             </div>
             <div className="css-file-block">
                 font-weight
