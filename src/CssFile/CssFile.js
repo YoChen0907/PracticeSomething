@@ -7,6 +7,9 @@ import BackgroundColor from './BackgroundColor';
 import BackgroundImage from './BackgroundImage';
 import Border from './Border';
 import Margin from './Margin';
+import Padding from './Padding';
+import Cursor from './Cursor';
+import TextAlign from './TextAlign';
 
 import './CssFile.css';
 
@@ -44,12 +47,15 @@ function CssFile() {
             </div>
             <div className="css-file-block">
                 padding
+                <Padding />
             </div>
             <div className="css-file-block">
                 cursor
+                <Cursor />
             </div>
             <div className="css-file-block">
                 text-align
+                <TextAlign />
             </div>
             <div className="css-file-block">
                 line-height

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Moment from './Moment';
 import Scss from './Scss';
 import CssFile from './CssFile';
+import Docker from './Docker';
 import './App.css';
 
 class App extends Component {
@@ -10,7 +11,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      functionList: [<Moment />, <div/>, <div />, <div />, <Scss />, <CssFile />],
+      functionList: [<Moment />, <div/>, <div />, <div />, <Scss />, <CssFile />, <Docker />],
       functionNum: 5,
     }
   }
@@ -32,6 +33,7 @@ class App extends Component {
           <div role="button" onClick={() => this.pachageSelect(3)} className="useing-table" name="Classnames">classnames</div>
           <div role="button" onClick={() => this.pachageSelect(4)} className="useing-table" name="Scss">Scss</div>
           <div role="button" onClick={() => this.pachageSelect(5)} className="useing-table" name="Scss">CssTag</div>
+          <div role="button" onClick={() => this.pachageSelect(6)} className="useing-table" name="Scss">Docker</div>
         </div>
         <div className="detail-introduction">
           {functionList[functionNum]}
