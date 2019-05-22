@@ -4,6 +4,7 @@ import Moment from './Moment';
 import Scss from './Scss';
 import CssFile from './CssFile';
 import Docker from './Docker';
+import ReactDates from './ReactDates';
 import './App.css';
 
 class App extends Component {
@@ -11,7 +12,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      functionList: [<Moment />, <div/>, <div />, <div />, <Scss />, <CssFile />, <Docker />],
+      functionList: [<Moment />, <div/>, <div />, <div />, <Scss />, <CssFile />, <Docker />, <ReactDates />],
       functionNum: 5,
     }
   }
@@ -32,8 +33,10 @@ class App extends Component {
           <div role="button" onClick={() => this.pachageSelect(2)} className="useing-table" name="Lodash">lodash</div>
           <div role="button" onClick={() => this.pachageSelect(3)} className="useing-table" name="Classnames">classnames</div>
           <div role="button" onClick={() => this.pachageSelect(4)} className="useing-table" name="Scss">Scss</div>
-          <div role="button" onClick={() => this.pachageSelect(5)} className="useing-table" name="Scss">CssTag</div>
-          <div role="button" onClick={() => this.pachageSelect(6)} className="useing-table" name="Scss">Docker</div>
+          <div role="button" onClick={() => this.pachageSelect(5)} className="useing-table" name="CssTag">CssTag</div>
+          <div role="button" onClick={() => this.pachageSelect(6)} className="useing-table" name="Docker">Docker</div>
+          <div role="button" onClick={() => this.pachageSelect(7)} className="useing-table" name="ReactDates">ReactDates</div>
+
         </div>
         <div className="detail-introduction">
           {functionList[functionNum]}

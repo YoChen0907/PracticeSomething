@@ -14,6 +14,12 @@ import LineHeight from './LineHeight';
 import WordSpacing from './WordSpacing';
 import FontStyle from './FontStyle';
 import FontSize from './FontSize';
+import FontWeight from './FontWeight';
+import Selectors from './Selectors';
+import Display from './Display';
+import Position from './Position';
+import Overflow from './Overflow';
+import FloatClear from './FloatClear';
 
 import './CssFile.css';
 
@@ -79,27 +85,27 @@ function CssFile() {
             </div>
             <div className="css-file-block">
                 font-weight
+                <FontWeight />
             </div>
             <div className="css-file-block">
                 selectors
-            </div>
-            <div className="css-file-block">
-                list
-            </div>
-            <div className="css-file-block">
-                table
+                <Selectors />
             </div>
             <div className="css-file-block">
                 display
+                <Display />
             </div>
             <div className="css-file-block">
                 position
+                <Position />
             </div>
             <div className="css-file-block">
                 overflow
+                <Overflow />
             </div>
             <div className="css-file-block">
                 float + Clear
+                <FloatClear />
             </div>
         </div>
     )

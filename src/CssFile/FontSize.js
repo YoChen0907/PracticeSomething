@@ -10,7 +10,7 @@ function FontSize() {
             <br />
             css: 
             <br />
-            {`font-size=20px;`}
+            {`font-size: 20px;`}
             <br />
             <div style={{ fontSize: '15px', margin: '15px' }}>
             fontSize: '15px'
