@@ -107,6 +107,20 @@ function CssFile() {
                 float + Clear
                 <FloatClear />
             </div>
+            <div className="css-file-block">
+                slick
+                <div>
+                    <ul>
+                        <li style={{ width: '25px', border: '1px solid black', margin: '0 15px' }}>li1</li>
+                        <li style={{ width: '25px', border: '1px solid black', margin: '0 15px' }}>li2</li>
+                        <li style={{ width: '25px', border: '1px solid black', margin: '0 15px' }}>li3</li>
+                        <li style={{ width: '25px', border: '1px solid black', margin: '0 15px' }}>li4</li>
+                        <li style={{ width: '25px', border: '1px solid black', margin: '0 15px' }}>li5</li>
+                        <li style={{ width: '25px', border: '1px solid black', margin: '0 15px' }}>li6</li>
+                        <li style={{ width: '25px', border: '1px solid black', margin: '0 15px' }}>li7</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     )
 }
