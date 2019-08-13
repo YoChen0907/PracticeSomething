@@ -5,6 +5,12 @@ import Scss from './Scss';
 import CssFile from './CssFile';
 import Docker from './Docker';
 import ReactDates from './ReactDates';
+import F2eCategoryPicker from './F2eCategoryPicker';
+import ReactSlider from './ReactSlider';
+import ReactSwipper from './ReactSwipper';
+import NewSwiper from './NewSwiper';
+import TruncateLongText from './TruncateLongText';
+
 import './App.css';
 
 class App extends Component {
@@ -12,8 +18,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      functionList: [<Moment />, <div/>, <div />, <div />, <Scss />, <CssFile />, <Docker />, <ReactDates />],
-      functionNum: 5,
+      functionList: [<Moment />, <div/>, <div />, <div />, <Scss />, <CssFile />, <Docker />, <ReactDates />, <F2eCategoryPicker />, <ReactSlider />, <ReactSwipper />, <NewSwiper />, <TruncateLongText />],
+      functionNum: 12,
     }
   }
 
@@ -36,6 +42,11 @@ class App extends Component {
           <div role="button" onClick={() => this.pachageSelect(5)} className="useing-table" name="CssTag">CssTag</div>
           <div role="button" onClick={() => this.pachageSelect(6)} className="useing-table" name="Docker">Docker</div>
           <div role="button" onClick={() => this.pachageSelect(7)} className="useing-table" name="ReactDates">ReactDates</div>
+          <div role="button" onClick={() => this.pachageSelect(8)} className="useing-table" name="F2eCategoryPicker">F2eCategoryPicker</div>
+          <div role="button" onClick={() => this.pachageSelect(9)} className="useing-table" name="ReactSlider">ReactSlider</div>
+          <div role="button" onClick={() => this.pachageSelect(10)} className="useing-table" name="ReactSwipper">ReactSwipper</div>
+          <div role="button" onClick={() => this.pachageSelect(11)} className="useing-table" name="NewSwiper">NewSwiper</div>
+          <div role="button" onClick={() => this.pachageSelect(12)} className="useing-table" name="TruncateLongText">TruncateLongText</div>
 
         </div>
         <div className="detail-introduction">

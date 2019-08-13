@@ -12,9 +12,17 @@ class Monent extends Component {
         };
     }
     render() {
+        const start = moment(new Date('2019-06-21'));
+        const today = moment(new Date('2019-06-16'));
+
+        const diffDays = moment.duration(start.diff(today)).asDays();
+        console.log('diffDays', diffDays);
         return (
             <div>
                 Monent
+                <div>
+
+                </div>
                 <p className="function-block">
                     <span className="function-title">moment().format():</span>
                     <span className="function-result">{moment().format()}</span>

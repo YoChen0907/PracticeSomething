@@ -1,10 +1,12 @@
 .App {
   margin: 0px 10px; }
   .App .useing-block {
-    display: flex;
-    justify-content: space-around;
     margin: 20px 0;
     border: 1px solid black;
     padding: 10px 0; }
   .App .useing-table {
-    cursor: pointer; }
+    margin: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid peru;
+    padding: 12px 6px; }
