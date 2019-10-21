@@ -31,7 +31,7 @@ class App extends Component {
 
 
   render() {
-    console.log('test1');
+    console.log('test100000');
     const { functionList, functionNum } = this.state;
     return (
       <div className="App">
