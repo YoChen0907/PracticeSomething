@@ -31,8 +31,11 @@ class App extends Component {
 
 
   render() {
-    console.log('test1');
+    console.log('test0000001');
     const { functionList, functionNum } = this.state;
+    console.log('test2000000');
+    console.log('test3000000');
+    
     return (
       <div className="App">
         <div className="useing-block">

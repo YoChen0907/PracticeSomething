@@ -11,6 +11,7 @@ class ReactSwipper extends Component {
     }
 
     render() {
+        console.log('test5');
         const params = {
             slidesPerView: 4,
             spaceBetween: 30,
