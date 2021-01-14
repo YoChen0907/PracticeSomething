@@ -54,7 +54,12 @@ class ToXlsx extends Component {
         return (
             <div>
                 {/* <div className="input-image-block"> */}
-                    <InputTester name="bankBookPhoto" multiple={false} accepts={['pic']} onChange={() => {  }} />
+                <InputTester name="bankBookPhoto" multiple={false} accepts={['pic']} onChange={() => {  }} />
+                <br />
+                <input
+                    type="file"
+                    onChange={() => { alert('normal') }}
+                />
                 {/* </div> */}
                 <button onClick={this.gogo}>gogo</button>
                 {
