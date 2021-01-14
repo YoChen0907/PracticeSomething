@@ -10,7 +10,8 @@ import ReactSlider from './ReactSlider';
 import ReactSwipper from './ReactSwipper';
 import NewSwiper from './NewSwiper';
 import TruncateLongText from './TruncateLongText';
-
+import InputOnSafari from './InputOnSafari';
+import ToXlsx from './ToXlsx';
 import './App.css';
 
 class App extends Component {
@@ -18,8 +19,24 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      functionList: [<Moment />, <div/>, <div />, <div />, <Scss />, <CssFile />, <Docker />, <ReactDates />, <F2eCategoryPicker />, <ReactSlider />, <ReactSwipper />, <NewSwiper />, <TruncateLongText />],
-      functionNum: 12,
+      functionList: [
+      <Moment />,
+      <div/>,
+      <div />,
+      <div />,
+      <Scss />,
+      <CssFile />,
+      <Docker />,
+      <ReactDates />,
+      <F2eCategoryPicker />,
+      <ReactSlider />,
+      <ReactSwipper />,
+      <NewSwiper />,
+      <TruncateLongText />,
+      <InputOnSafari />,
+      <ToXlsx />
+    ],
+      functionNum: 14,
     }
   }
 
@@ -47,7 +64,8 @@ class App extends Component {
           <div role="button" onClick={() => this.pachageSelect(10)} className="useing-table" name="ReactSwipper">ReactSwipper</div>
           <div role="button" onClick={() => this.pachageSelect(11)} className="useing-table" name="NewSwiper">NewSwiper</div>
           <div role="button" onClick={() => this.pachageSelect(12)} className="useing-table" name="TruncateLongText">TruncateLongText</div>
-
+          <div role="button" onClick={() => this.pachageSelect(13)} className="useing-table" name="input">input on safari</div>
+          <div role="button" onClick={() => this.pachageSelect(14)} className="useing-table" name="input">to xlsx</div>
         </div>
         <div className="detail-introduction">
           {functionList[functionNum]}
