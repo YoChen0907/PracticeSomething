@@ -4,6 +4,7 @@ import uuid from 'uuid';
 
 
 const onSelect = async (e, cb) => {
+  alert('onSelect')
   const files = [];
   const fileKeys = Object.keys(e.target.files);
   fileKeys.forEach((key) => {
