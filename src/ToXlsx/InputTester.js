@@ -43,7 +43,7 @@ const InputTester = ({ accepts, multiple, onChange, ...props }) => {
       multiple={multiple}
       type="file"
       accept={accept}
-      onChange={e => onSelect(e, onChange)}
+      onChange={() => { alert('two select') }}
       {...props}
     />
   );

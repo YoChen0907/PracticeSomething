@@ -57,6 +57,7 @@ class ToXlsx extends Component {
                 <InputTester name="bankBookPhoto" multiple={false} accepts={['pic']} onChange={() => {  }} />
                 <br />
                 <input
+                    multiple={false}
                     type="file"
                     onChange={() => { alert('normal') }}
                 />
