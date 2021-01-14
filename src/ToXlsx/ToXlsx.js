@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 // import XLSX from 'xlsx';
 import FileSaver from 'file-saver';
-// import fs from 'fs';
-// import stream from 'stream';
+import InputTester from './InputTester';
 import data from './data.json';
 const fs = require('fs');
+
 
 class ToXlsx extends Component {
     constructor(props){
@@ -53,6 +53,7 @@ class ToXlsx extends Component {
     render() {
         return (
             <div>
+                <InputTester className="input-image--disapear" name="bankBookPhoto" multiple={false} accepts={['pic']} onChange={() => {  }} />
                 <button onClick={this.gogo}>gogo</button>
                 {
                     data.map(teacherData => {
