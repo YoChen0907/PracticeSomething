@@ -53,15 +53,20 @@ class ToXlsx extends Component {
     render() {
         return (
             <div>
-                {/* <div className="input-image-block"> */}
-                <InputTester name="bankBookPhoto" multiple={false} accepts={['pic']} onChange={() => {  }} />
+                <div className="input-image-block">
+                    1
+                    <InputTester name="bankBookPhoto" multiple={false} accepts={['pic']} onChange={() => {  }} />
+                </div>
                 <br />
-                <input
-                    multiple={false}
-                    type="file"
-                    onChange={() => { alert('normal') }}
-                />
-                {/* </div> */}
+                <br />
+                <div className="input-image-block">
+                    2
+                    <input
+                        multiple={false}
+                        type="file"
+                        onChange={() => { alert('normal') }}
+                    />
+                </div>
                 <button onClick={this.gogo}>gogo</button>
                 {
                     data.map(teacherData => {
