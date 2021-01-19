@@ -10,3 +10,24 @@
     cursor: pointer;
     border: 1px solid peru;
     padding: 12px 6px; }
+
+.input-image--disapear {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  opacity: 0; }
+
+.input-image-block {
+  pointer-events: visible;
+  width: 200px;
+  border: 1px dashed black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px; }
+  .input-image-block .mark-text {
+    font-size: 48px;
+    margin: 20px;
+    color: rgba(0, 0, 0, 0.1); }

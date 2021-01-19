@@ -55,13 +55,14 @@ class ToXlsx extends Component {
             <div>
                 <div className="input-image-block">
                     1
-                    <InputTester name="bankBookPhoto" multiple={false} accepts={['pic']} onChange={() => {  }} />
+                    <InputTester className="input-image--disapear" multiple={false} accepts={['pic']} onChange={() => {  }} />
                 </div>
                 <br />
                 <br />
                 <div className="input-image-block">
                     2
                     <input
+                        className="input-image--disapear"
                         multiple={false}
                         type="file"
                         onChange={() => { alert('normal') }}
