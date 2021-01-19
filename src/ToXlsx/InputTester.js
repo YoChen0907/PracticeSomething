@@ -4,7 +4,6 @@ import uuid from 'uuid';
 
 
 const onSelect = async (e, cb) => {
-  alert('onSelect')
   const files = [];
   const fileKeys = Object.keys(e.target.files);
   fileKeys.forEach((key) => {
@@ -37,12 +36,13 @@ const InputTester = ({ accepts, multiple, onChange, ...props }) => {
         break;
     }
   });
-//   const accept = acceptTypes.join(',');
+  const accept = acceptTypes.join(',');
   return (
     <input
       multiple={multiple}
       type="file"
-      onChange={() => { alert('two select') }}
+      accept={accept}
+      onChange={e => onSelect(e, onChange)}
       {...props}
     />
   );

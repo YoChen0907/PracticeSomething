@@ -45,13 +45,20 @@ class ToXlsx extends Component {
         e.target.value = null;
       };
 
+    ImageChange = (e, fileData) => {
+    this.setState({
+      imageFile: fileData[0].file,
+    });
+  };
+
     render() {
         return (
             <div>
                 <div className="input-image-block">
                     1
-                    <InputTester className="input-image--disapear" multiple={false} accepts={['pic']} onChange={(e) => { this.onSelect(e, () => {}) }} />
+                    <InputTester className="input-image--disapear" multiple={false} accepts={['pic']} onChange={this.ImageChange} />
                 </div>
+                <img src={this.state.imageFile} alt="" />
                 <br />
                 <br />
                 <div className="input-image-block">
