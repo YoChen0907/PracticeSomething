@@ -56,7 +56,7 @@ class ToXlsx extends Component {
             <div>
                 <div className="input-image-block">
                     1
-                    <InputTester className="input-image--disapear" multiple={false} accepts={['pic']} onChange={this.ImageChange} />
+                    <InputTester className="input-image--disapear" multiple={false} onChange={this.ImageChange} />
                 </div>
                 <img src={this.state.imageFile} alt="" />
                 <br />
