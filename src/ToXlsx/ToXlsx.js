@@ -40,7 +40,8 @@ class ToXlsx extends Component {
             file: e.target.files[key],
           });
         });
-        cb(e, files);
+        // cb(e, files);
+        alert(files[0].file)
         e.target.value = null;
       };
 
