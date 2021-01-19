@@ -15,24 +15,6 @@ class ToXlsx extends Component {
     }
 
     gogo = async () => {
-        // const workBook = XLSX.utils.book_new();
-        // const worksheet = XLSX.utils.json_to_sheet(data);
-        // await XLSX.utils.book_append_sheet(workBook, worksheet, 'sheet1');
-        // const fileContents = await XLSX.write(workBook, { type: 'buffer', bookType: 'xlsx', bookSST: false });
-        // console.log('fileContents', fileContents);
-        // fs.writeFile('test.xlsx', fileContents, function (err) {
-        //     if (err)
-        //         console.log(err);
-        //     else
-        //         console.log('Write operation complete.');
-        // });
-        // FileSaver.writeFile("test.txt", [{ aa: 'aa' }], err => {
-        //     if (err) {
-        //         console.error(err);
-        //     } else {
-        //         console.log("Error written");
-        //     }
-        // });
         let result = [];
         data.map((teacherData) => {
             const Res = {
@@ -50,12 +32,24 @@ class ToXlsx extends Component {
         console.log('result', fs);
     }
 
+    onSelect = async (e, cb) => {
+        const files = [];
+        const fileKeys = Object.keys(e.target.files);
+        fileKeys.forEach((key) => {
+          files.push({
+            file: e.target.files[key],
+          });
+        });
+        cb(e, files);
+        e.target.value = null;
+      };
+
     render() {
         return (
             <div>
                 <div className="input-image-block">
                     1
-                    <InputTester className="input-image--disapear" multiple={false} accepts={['pic']} onChange={() => {  }} />
+                    <InputTester className="input-image--disapear" multiple={false} accepts={['pic']} onChange={(e) => { this.onSelect(e, () => {}) }} />
                 </div>
                 <br />
                 <br />
@@ -65,7 +59,7 @@ class ToXlsx extends Component {
                         className="input-image--disapear"
                         multiple={false}
                         type="file"
-                        onChange={() => { alert('normal') }}
+                        onChange={(e) => { alert(e.target.files) }}
                     />
                 </div>
                 <button onClick={this.gogo}>gogo</button>

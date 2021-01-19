@@ -37,12 +37,11 @@ const InputTester = ({ accepts, multiple, onChange, ...props }) => {
         break;
     }
   });
-  const accept = acceptTypes.join(',');
+//   const accept = acceptTypes.join(',');
   return (
     <input
       multiple={multiple}
       type="file"
-      accept={accept}
       onChange={() => { alert('two select') }}
       {...props}
     />
