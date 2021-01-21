@@ -41,6 +41,7 @@ const InputTester = ({ accepts, multiple, onChange, ...props }) => {
     <input
       multiple={multiple}
       type="file"
+      accept="image/png,image/jpeg,image/bmp"
       onChange={e => onSelect(e, onChange)}
       {...props}
     />
